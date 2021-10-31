@@ -1,0 +1,474 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: 'M PLUS Rounded 1c', sans-serif;
+    color: white;
+}
+
+body, html{
+    background: rgb(224,22,61);
+    background: linear-gradient(127deg, rgba(224,22,61,1) 0%, rgba(180,14,45,1) 57%, rgba(91,18,32,1) 100%) no-repeat;
+    height: 100%;
+}
+
+.navbar{
+    position:relative;
+    z-index: 5;
+}
+
+.navbar-center{
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+}
+
+.text-center li{
+    margin: 0 2vw;
+}
+
+.nav-item a{
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.navbar-brand{
+    margin: 2vh 3vw;
+}
+
+.navbar-brand img{
+    height: 70px;
+}
+
+.homecont{
+    display: flex;
+    align-items: center;
+    margin-left: -44px;
+}
+
+.slogan{
+    flex-basis: 40%;
+    position: relative;
+    margin-top: 150px;
+    margin-left: 20%;
+}
+
+.slogan h3{
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.slogan h1{
+    font-weight: 800;
+    font-size: 90px;
+}
+
+.sloganPic{
+    flex-basis: 60%;
+}
+
+.chick{
+    position: fixed;
+    height: 900px;
+    z-index: 1;
+    transform: translate(-50px, -400px);
+}
+
+.sill{
+    position: fixed;
+    height: 900px;
+    z-index: 0;
+    transform: translate(100px, -200px);
+}
+
+.socials{
+    width: 100%;
+}
+
+.socials ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    list-style: none;
+    transform: translateY(15vh);
+    position: relative;
+    z-index: 5;
+}
+
+.socials li{
+    margin: 20px;
+    font-size: 22px;
+}
+
+.socials i{
+    color: #ffffff;
+    opacity: .6; 
+}
+
+.socials a:hover{
+    color: white;
+    opacity: .8;
+}
+
+.socials a:active{
+    color: white;
+}
+
+/* about page */
+
+.aboutcont h1, .ptitle h1{
+    margin: 0 3%;
+    font-weight: 800;
+    font-size: max(min(28px), 4vw);
+}
+
+#section1, #section2, #section3{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 4% 0;
+    margin: 4% 0;
+}
+
+.tonypic{
+    padding-left: 20%;
+}
+
+.tonypic img{
+    border-radius: 50%;
+    min-height: 200px;
+    height: 23vw;
+}
+
+.section1txt{
+    padding: 2% 4%;
+    font-family: 'Nunito', sans serif;
+}
+
+.section1txt h3, .section2txt h3, .cardtxt h3{
+    text-align: left;
+    font-family: 'Nunito', sans serif;
+    font-weight: 700;
+}
+
+.section1txt p, .section2txt p, .cardtxt p{
+    font-family: 'Nunito';
+    text-align: justify;
+    padding: 2% 8%;
+}
+
+#section2{
+    background: rgb(0, 0, 0, 0.3);
+    padding: 7% 0;
+    margin: 0;
+}
+
+.section2txt{
+    flex-basis: 50%;
+    padding: 2% 5%;    
+}
+
+.section2txt h3{
+    text-align: right;
+}
+
+.familypic img{
+    min-height: 200px;
+    height: 23vw;
+}
+
+.cardh{
+    margin: 0 4%;
+    width: 19vw;
+    min-width: 200px;
+    min-height: auto;
+}
+
+.cardimg{
+    min-width: 200px;
+    min-height: 230px;
+    height: 24vw;
+    width: 19vw;    
+}
+
+.cardimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.cardtxt h3{
+    text-align: center;
+    margin-top: 4%;
+}
+
+.cardtxt p{
+    text-align: center;
+    padding: 0 2%;
+}
+
+/* ----- product page ------ */
+
+#preview{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 5% 5%;
+}
+
+.prodimg{
+    flex-basis: 54%;
+    padding-left: 3%;
+}
+
+.prodimg img{
+    height: 23vw;
+    min-width: 180px;
+    min-height: 115px;
+    align-self: flex-end;
+    object-fit: cover;
+}
+
+.proddesc{
+    flex-basis: 45%;
+    align-self: baseline;
+    margin: 3% 0;
+}
+
+.proddesc h2{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: max(min(20px), 3vw);
+}
+
+.proddesc p{
+    font-family: 'Nunito';
+    font-size: max(min(14px), 1.5vw);
+}
+
+.proddesc button{
+    height: 52px;
+    width: 195px;
+    margin: 5% 0;
+    padding: 1%;
+    border: 2px solid rgba(102, 19, 19, 0.658);
+    background-color: rgba(102, 19, 19, 0.658);
+    filter: drop-shadow(15px 15px 17px rgba(104, 20, 20, 0.79));
+    border-radius: 24px;
+}
+
+.proddesc button:active{
+    transform: translateY(7px);
+    filter:contrast(20%);
+}
+
+.proddesc a{
+    font-family: 'Nunito';
+    font-weight: 500;
+    text-decoration: none;
+    color: #ffffff;
+}
+
+#selectsec{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
+
+.selection{
+    height: 14vw;
+    width: 12vw;
+    min-height: 104px;
+    min-width: 90px;
+    background-color: rgb(14, 13, 13, 0.3);
+    backdrop-filter: blur(10px);
+    border-radius: 5%;
+    margin: 2%;
+    cursor: pointer;
+}
+
+.selection:hover{
+    transform: translateY(-10px);
+}
+
+.selection:active{
+    backdrop-filter: brightness(30%);
+}
+
+.selimg{
+    height: 60%;
+    width: 100%;
+    border-radius: 5% 5% 0 0;
+    background-color: rgb(245, 245, 245, 0.5);
+}
+
+.selimg img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    padding: 2% 3%;
+}
+
+.seltxt{
+    height: auto;
+    margin: 7% 5%;
+}
+
+.seltxt h4{
+    font-family: 'Nunito';
+    font-weight: 600;
+    font-size: max(min(11px),1.5vw);
+    text-align: center;
+    margin: 0;
+}
+
+
+@media only screen and (max-width:797px){
+
+    .homecont{
+        margin-left: 0;
+        flex-direction: column;
+    }
+
+    .slogan{
+        flex-basis: 100%;
+        margin-top: 10%;
+        margin-left: 0;
+        text-align: center;
+        justify-content: center;
+    }
+    .slogan h3{
+        margin-bottom: 20px;
+        text-align: left;
+        padding-left: 8%;
+    }
+    
+    .slogan h1{
+        font-weight: 800;
+        font-size: 17vw;
+    }
+
+    .sloganPic{
+        flex-basis: 100%;
+    }
+    
+    .chick{
+        position: fixed;
+        max-height: 600px;
+        min-height: 400px;
+        z-index: 1;
+        transform: translate(-40vw, -15vh);
+    }
+    
+    .sill{
+        position: fixed;
+        max-height: 600px;
+        z-index: 0;
+        transform: translate(-50vw, 8vh);
+    }
+
+    .socials ul{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: right;
+        list-style: none;
+        transform: translateY(-4vh);
+        position: relative;
+        z-index: 5;
+    }
+
+    .navbar-center{
+        position: relative;
+        background-color: rgb(0, 0, 0, 0.1);        
+    }
+
+    #section1, #section2, #section3{
+        padding: 0 ;
+        margin: 5% 0;
+        flex-direction: column;
+    }
+
+    .tonypic{
+        padding-left: 0;
+        margin-bottom: 4%;
+    }
+    
+    .section1txt h3, .section2txt h3, .cardtxt h3{
+        text-align: center;
+    }
+    
+    .section1txt p, .section2txt p, .cardtxt p{
+        font-family: 'Nunito';
+        text-align: justify;
+        padding: 2% 8%;
+    }
+    
+    #section2{
+        background: rgb(0, 0, 0, 0.3);
+        padding: 7% 0;
+        flex-direction: column-reverse;
+    }
+    
+    .section2txt{
+        flex-basis: 50%;
+        padding: 2% 5%;    
+    }
+
+    .familypic{
+        margin: 3% 0;
+    }
+    
+    .familypic img{
+        min-height: 200px;
+        height: 23vw;
+    }
+
+    #section3{
+        padding: 5% 0;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .cardh{
+        margin: 5% 0;
+    }
+    
+    .cardimg img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover
+    }
+    
+    .cardtxt h3{
+        text-align: center;
+        margin-top: 4%;
+    }
+    
+    .cardtxt p{
+        text-align: center;
+        padding: 0 2%;
+    }
+
+    /* ----- product page ------ */
+
+#preview{
+    flex-direction: column;
+}
+
+.prodimg{
+    margin: 5% 0;
+}
+
+.proddesc div{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+#selectsec{
+    flex-wrap: wrap;
+}
+
+}
